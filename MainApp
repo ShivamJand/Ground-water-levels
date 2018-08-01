@@ -1,0 +1,33 @@
+from flask import Flask, render_template
+
+'''
+import requests
+
+#r = requests.get('https://api.github.com', auth=('user', 'pass'))
+#r = requests.get('https://api.github.com')
+#r = requests.get('https://www.facebook.com/')
+r = requests.get('https://api.data.gov.in/resource/c4edbb12-db55-4ccf-be8d-d2dcd7e5ec07?api-key=579b464db66ec23bdd00000146e9ac1958cb44685120fa63e6c5d6f0&format=json&offset=0')
+
+print(r.status_code)  # 200
+#print(r.encoding)
+data = r.json()
+#print(data.fields["name"])
+#print(data.records)
+#print(r.text)  # 'application/json'
+'''
+
+
+
+
+
+MainApp = Flask(__name__)
+
+@MainApp.route('/')
+def heatmap():
+    return render_template('x.html')
+
+
+
+if __name__=='__main__':
+    MainApp.run(debug=True)
+
